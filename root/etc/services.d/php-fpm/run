@@ -1,0 +1,4 @@
+#!/usr/bin/with-contenv bash
+
+echo "Starting php-fpm."
+/usr/sbin/php-fpm7 -F -y /etc/php7/php-fpm.d/elfinder.conf

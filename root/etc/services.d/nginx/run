@@ -1,0 +1,4 @@
+#!/usr/bin/with-contenv bash
+
+echo "Starting nginx."
+exec /usr/sbin/nginx -c /etc/nginx/elfinder.conf

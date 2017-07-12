@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>elFinder - Docker</title>
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+
+    <script data-main="./main.default.js"
+            src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.3.2/require.min.js"></script>
+    <script>
+        define('elFinderConfig', {
+            defaultOpts: {
+                url: 'php/connector.minimal.php'
+                , commandsOptions: {
+                    edit: {
+                        extraOptions: {}
+                    }
+                    , quicklook: {
+                        googleDocsMimes: [
+                            'application/pdf',
+                            'image/tiff',
+                            'application/vnd.ms-office',
+                            'application/msword',
+                            'application/vnd.ms-word',
+                            'application/vnd.ms-excel',
+                            'application/vnd.ms-powerpoint',
+                            'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+                            'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+                        ]
+                    }
+                }
+            },
+            managers: {
+                'elfinder': {}
+            }
+        });
+    </script>
+</head>
+<body>
+
+<div id="elfinder"></div>
+
+</body>
+</html>

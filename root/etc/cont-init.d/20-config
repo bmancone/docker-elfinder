@@ -1,0 +1,9 @@
+#!/usr/bin/with-contenv bash
+
+# make folders
+mkdir -p \
+    /run{/nginx,/php} \
+    /data
+
+# permissions
+chown -R abc:abc /run
