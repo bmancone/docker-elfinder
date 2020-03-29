@@ -1,9 +1,9 @@
-FROM lsiobase/alpine:3.6
+FROM lsiobase/alpine:3.11
 MAINTAINER Brice Mancone
 
 # global environment settings
 ENV \
-    ELFINDER_DOWNLOAD="https://github.com/Studio-42/elFinder/archive/2.1.26.zip" \
+    ELFINDER_DOWNLOAD="https://github.com/Studio-42/elFinder/archive/2.1.55.zip" \
     ELFINDER_USER=abc
 
 # install packages
